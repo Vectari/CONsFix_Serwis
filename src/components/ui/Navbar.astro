@@ -3,23 +3,19 @@ import { Image } from "astro:assets";
 
 const navLinks = [
   {
-    name: "About us",
+    name: "Cennik",
     href: "#about",
   },
   {
-    name: "Services",
+    name: "Jak działamy?",
     href: "#services",
   },
   {
-    name: "Use cases",
-    href: "#cases",
-  },
-  {
-    name: "Testimonials",
+    name: "O nas",
     href: "#testimonials",
   },
   {
-    name: "Contact",
+    name: "Kontakt",
     href: "#contact",
   },
 ];
@@ -41,6 +37,7 @@ import brand from "../../assets/brand.svg";
     <div class="pl-4 xl:flex-none">
       <a href="#home">
         <Image src={brand} alt="Brand Logo" class="w-[219px]" loading="eager" />
+        CONsFix Serwis
       </a>
     </div>
 
@@ -66,7 +63,7 @@ import brand from "../../assets/brand.svg";
 
       <!-- Login -->
       <div class="flex xl:flex-row xl:items-center px-4 xl:gap-4 flex-col">
-        <button class="btn-secondary">Request a quote</button>
+        <button class="btn-secondary"><a href="#contact">Wyślij wiadomość</a></button>
       </div>
     </div>
 
