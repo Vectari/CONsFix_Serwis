@@ -1,0 +1,1 @@
+# CONsFix_Serwis
