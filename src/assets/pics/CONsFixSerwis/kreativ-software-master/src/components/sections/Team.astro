@@ -4,7 +4,7 @@ import TeamCard from "../ui/TeamCard.astro";
 import Section from "./Section.astro";
 
 const description =
-  "Sprawdź ceny najpopularniejszych usterek. Zawsze w najniższych cenach!";
+  "Meet the skilled and experienced team behind our successful digital marketing strategies";
 
 import {
   default as p1,
@@ -18,10 +18,11 @@ import {
 const team = [
   {
     pic: p1,
-    name: "Czyszczenie układu chłodzenia",
-    role: "100 zł",
+    name: "Maria Katz",
+    role: "CEO",
     description:
-      "Dokładne przedmuchanie konsoli sprężonym powietrzem, wymiana pasty termoprzewodzącej na procesorze, wymiana termopadów.",
+      "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    link: "https://linkedin.com",
   },
   {
     pic: p2,
@@ -29,6 +30,7 @@ const team = [
     role: "CEO",
     description:
       "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    link: "https://linkedin.com",
   },
   {
     pic: p3,
@@ -36,6 +38,7 @@ const team = [
     role: "CEO",
     description:
       "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    link: "https://linkedin.com",
   },
   {
     pic: p4,
@@ -43,6 +46,7 @@ const team = [
     role: "CEO",
     description:
       "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    link: "https://linkedin.com",
   },
   {
     pic: p5,
@@ -50,6 +54,7 @@ const team = [
     role: "CEO",
     description:
       "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis",
+    link: "https://linkedin.com",
   },
   {
     pic: p6,
@@ -64,7 +69,7 @@ const team = [
 
 <Section id="about">
   <div class="mt-[140px]">
-    <SectionTitle sectionTitle="Cennik najpopularniejszych napraw" description={description} />
+    <SectionTitle sectionTitle="Team" description={description} />
     <div
       class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 grid-rows-2 gap-10"
     >
@@ -76,12 +81,13 @@ const team = [
             name={member.name}
             role={member.role}
             description={member.description}
+            link={member.link}
           />
         ))
       }
     </div>
-    <!-- <div class="flex justify-end mt-10">
+    <div class="flex justify-end mt-10">
       <button class="btn-primary">See all team</button>
-    </div> -->
+    </div>
   </div>
 </Section>
