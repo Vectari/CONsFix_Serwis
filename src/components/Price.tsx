@@ -1,57 +1,53 @@
-import { IconButton } from "./ui";
 import { cn } from "./ui/utils.ts";
-import { Lucide, Simple } from "./icons";
+import { Simple } from "./icons/index.ts";
 
-// TODO : update stacks
-const stacks = [
+const prices = [
   {
-    name: "Figma",
-    category: "Design",
+    name: "Czyszczenie układu chłodzenia i wymiana past",
+    price: "80 zł",
     icon: Simple.IconFigma,
     url: "https://www.figma.com",
   },
   {
-    name: "Framer",
-    category: "Design",
+    name: "Wymiana lasera",
+    price: "150-220 zł",
     icon: Simple.IconFramer,
     url: "https://www.framer.com",
   },
   {
-    name: "Rive",
-    category: "Design",
+    name: "Wymiana analoga HALL EFFECT",
+    price: "70-90 zł",
     icon: Simple.IconRive,
     url: "https://rive.app",
   },
   {
-    name: "Arc",
-    category: "Browser",
+    name: "Wymiana analoga w Nintendo Joy-Con",
+    price: "60 zł",
     icon: Simple.IconArc,
     url: "https://arc.net",
   },
-  {
-    name: "Notion",
-    category: "Productivity",
-    icon: Simple.IconNotion,
-    url: "https://www.notion.so",
-  },
-  {
-    name: "Calendly",
-    category: "Calendar",
-    icon: Simple.IconCalendly,
-    url: "https://calendly.com",
-  },
+
 ];
 
 export default () => {
   return (
     <div>
-      <h2 className="font-medium text-xl mb-3">Cennik</h2>
-      <p>Ceny przykładowe</p>
+      <h2 className="font-medium text-3xl mb-3"># Cennik</h2>
+      <p className="text-center">
+        Przykładowe ceny najbardziej typowych usterek i usług.
+        <br />
+        <br />
+        Nie ma tego czego szukasz?
+        <br />
+        <p className="font-medium text-xl">Zapraszamy do kontaktu!</p>
+        <br />
+        <br />
+      </p>
       <ul className="grid grid-cols-2 gap-3 p-1">
-        {stacks.map((stack) => {
+        {prices.map((price) => {
           return (
             <li
-              key={stack.name}
+              key={price.name}
               className={cn(
                 "group",
                 "flex items-center justify-between px-4 py-3",
@@ -61,27 +57,27 @@ export default () => {
               )}
             >
               <div className="flex flex-row items-stretch gap-5 pl-2">
-                <div className="flex items-center justify-center">
-                  <stack.icon
+                {/* <div className="flex items-center justify-center">
+                  <price.icon
                     size={24}
                     className="transition duration-300 group-hover:-translate-y-1 text-neutral-10 group-hover:text-neutral-11"
                   />
-                </div>
+                </div> */}
 
                 <div>
                   <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">
-                    {stack.name}
+                    {price.name}
                   </h3>
-                  <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-xs">
-                    {stack.category}
+                  <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-s">
+                    {price.price}
                   </div>
                 </div>
               </div>
 
-              <IconButton
+              {/* <IconButton
                 as="a"
                 role="button"
-                href={stack.url}
+                href={price.url}
                 className="group/icon"
                 target="_blank"
                 aria-label="Open"
@@ -90,7 +86,7 @@ export default () => {
                   aria-label="Open"
                   className="transition text-neutral-10 group-hover:text-primary-11 group-focus-visible/icon:text-primary-11"
                 />
-              </IconButton>
+              </IconButton> */}
             </li>
           );
         })}
