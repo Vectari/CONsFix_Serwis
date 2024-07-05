@@ -1,5 +1,5 @@
 import { cn } from "./ui/utils.ts";
-import { Simple } from "./icons";
+import { Simple } from "./icons/index.ts";
 
 // TODO : update socials
 const socials = [
@@ -23,7 +23,7 @@ const socials = [
 export default () => {
   return (
     <div>
-      <h2 className="font-medium text-xl mb-3">Kontakt</h2>
+      <h2 className="font-medium text-3xl mb-3"># Kontakt</h2>
       <ul className="flex items-center justify-center gap-3 p-1">
         {socials.map((social) => {
           return (
