@@ -26,7 +26,6 @@ const prices = [
     icon: Simple.IconArc,
     url: "https://arc.net",
   },
-
 ];
 
 export default () => {
@@ -39,7 +38,9 @@ export default () => {
         <br />
         Nie ma tego czego szukasz?
         <br />
-        <p className="font-medium text-xl">Zapraszamy do kontaktu!</p>
+        <p className="text-center font-medium text-xl">
+          Zapraszamy do kontaktu!
+        </p>
         <br />
         <br />
       </p>
