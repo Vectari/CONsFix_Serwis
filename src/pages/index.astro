@@ -4,9 +4,9 @@ import MainLayout from "~/layouts/MainLayout.astro";
 import { Separator } from "~/components/ui";
 
 import About from "~/components/About.tsx";
-import Projects from "~/components/Projects.tsx";
-import Stacks from "~/components/Stacks.tsx";
-import Socials from "~/components/Socials.tsx";
+import HowItWorks from "~/components/HowItWorks.tsx";
+import Price from "~/components/Price.tsx";
+import Contact from "~/components/Contact.tsx";
 import DevelopedBy from "~/components/DevelopedBy.tsx";
 ---
 
@@ -16,15 +16,15 @@ import DevelopedBy from "~/components/DevelopedBy.tsx";
 
     <Separator className="my-8" />
 
-    <Projects client:idle />
+    <HowItWorks client:idle />
 
     <div class="h-10"></div>
 
-    <Stacks client:idle />
+    <Price client:idle />
 
     <div class="h-10"></div>
 
-    <Socials client:idle />
+    <Contact client:idle />
 
     <Separator className="my-8" />
 
@@ -38,8 +38,15 @@ import DevelopedBy from "~/components/DevelopedBy.tsx";
     z-index: 1;
     position: relative;
     background-color: rgb(var(--neutral-1));
-    background-image: linear-gradient(rgb(var(--neutral-2)) 1px, transparent 1px),
-      linear-gradient(to right, rgb(var(--neutral-2)) 1px, rgb(var(--neutral-1)) 1px);
+    background-image: linear-gradient(
+        rgb(var(--neutral-2)) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to right,
+        rgb(var(--neutral-2)) 1px,
+        rgb(var(--neutral-1)) 1px
+      );
     background-size: 40px 40px;
   }
 
@@ -51,6 +58,10 @@ import DevelopedBy from "~/components/DevelopedBy.tsx";
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(to bottom, transparent, rgb(var(--neutral-1)));
+    background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--neutral-1))
+    );
   }
 </style>
