@@ -3,7 +3,7 @@ import MainLayout from "~/layouts/MainLayout.astro";
 
 import { Separator } from "~/components/ui";
 
-import About from "~/components/About.tsx";
+import Hero from "~/components/Hero.tsx";
 import HowItWorks from "~/components/HowItWorks.tsx";
 import Price from "~/components/Price.tsx";
 import Contact from "~/components/Contact.tsx";
@@ -12,7 +12,7 @@ import DevelopedBy from "~/components/DevelopedBy.tsx";
 
 <MainLayout>
   <main class="container p-3 mx-auto max-w-screen-sm min-h-dvh">
-    <About client:idle />
+    <Hero client:idle />
 
     <Separator className="my-8" />
 
