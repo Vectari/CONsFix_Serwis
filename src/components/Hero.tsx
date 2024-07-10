@@ -1,13 +1,9 @@
-import { Avatar } from "./ui";
-import { Lucide } from "./icons";
-
 export default () => {
   return (
     <div className="flex flex-col items-start gap-6 lg:gap-8 px-3 lg:px-6 py-4">
       <div className="flex flex-row items-center gap-4">
-        <Avatar src="/favicon.svg" alt="profile-picture">
-          <Lucide.IconUser className="size-2/3" />
-        </Avatar>
+        {/* <Avatar src="/favicon.png" alt="profile-picture"></Avatar> */}
+        <img src={"../../src/assets/favicon.png"} className="w-48 h-48"/>
 
         <div className="flex flex-col items-start gap-2">
           <h1 className="text-neutral-12 font-medium text-lg lg:text-xl">
