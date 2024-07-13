@@ -4,45 +4,75 @@ const prices_PS4 = [
   {
     name: "Czyszczenie układu chłodzenia i wymiana past",
     price: "80 zł",
-    url: "https://www.figma.com",
   },
   {
     name: "Wymiana lasera",
     price: "150-220 zł",
-    url: "https://www.framer.com",
   },
   {
     name: "Wymiana analoga HALL EFFECT",
     price: "70-90 zł",
-    url: "https://rive.app",
   },
   {
     name: "Wymiana analoga w Nintendo Joy-Con",
     price: "60 zł",
-    url: "https://arc.net",
   },
 ];
 
 const prices_PS5 = [
   {
-    name: "Czyszczenie układu chłodzenia i wymiana past",
-    price: "80 zł",
-    url: "https://www.figma.com",
+    name: "Czyszczenie układu chłodzenia i wymiana ciekłego metalu",
+    price: "100 zł",
   },
   {
     name: "Wymiana lasera",
     price: "150-220 zł",
-    url: "https://www.framer.com",
   },
   {
     name: "Wymiana analoga HALL EFFECT",
     price: "70-90 zł",
-    url: "https://rive.app",
   },
   {
     name: "Wymiana analoga w Nintendo Joy-Con",
     price: "60 zł",
-    url: "https://arc.net",
+  },
+];
+
+const prices_XOne = [
+  {
+    name: "Czyszczenie układu chłodzenia i wymiana ciekłego metalu",
+    price: "100 zł",
+  },
+  {
+    name: "Wymiana lasera",
+    price: "150-220 zł",
+  },
+  {
+    name: "Wymiana analoga HALL EFFECT",
+    price: "70-90 zł",
+  },
+  {
+    name: "Wymiana analoga w Nintendo Joy-Con",
+    price: "60 zł",
+  },
+];
+
+const prices_XSeries = [
+  {
+    name: "Czyszczenie układu chłodzenia i wymiana ciekłego metalu",
+    price: "100 zł",
+  },
+  {
+    name: "Wymiana lasera",
+    price: "150-220 zł",
+  },
+  {
+    name: "Wymiana analoga HALL EFFECT",
+    price: "70-90 zł",
+  },
+  {
+    name: "Wymiana analoga w Nintendo Joy-Con",
+    price: "60 zł",
   },
 ];
 
@@ -50,22 +80,18 @@ const prices_PS_SD = [
   {
     name: "Czyszczenie układu chłodzenia i wymiana past",
     price: "80 zł",
-    url: "https://www.figma.com",
   },
   {
     name: "Wymiana lasera",
     price: "150-220 zł",
-    url: "https://www.framer.com",
   },
   {
     name: "Wymiana analoga HALL EFFECT",
     price: "70-90 zł",
-    url: "https://rive.app",
   },
   {
     name: "Wymiana analoga w Nintendo Joy-Con",
     price: "60 zł",
-    url: "https://arc.net",
   },
 ];
 
@@ -73,22 +99,18 @@ const prices_PS_NS = [
   {
     name: "Czyszczenie układu chłodzenia i wymiana past",
     price: "80 zł",
-    url: "https://www.figma.com",
   },
   {
     name: "Wymiana lasera",
     price: "150-220 zł",
-    url: "https://www.framer.com",
   },
   {
     name: "Wymiana analoga HALL EFFECT",
     price: "70-90 zł",
-    url: "https://rive.app",
   },
   {
     name: "Wymiana analoga w Nintendo Joy-Con",
     price: "60 zł",
-    url: "https://arc.net",
   },
 ];
 
@@ -138,6 +160,64 @@ export default () => {
       <h3 className="font-medium text-2xl m-6 ml-16"># PS5</h3>
       <ul className="grid gap-3  ">
         {prices_PS5.map((price) => {
+          return (
+            <li
+              key={price.name}
+              className={cn(
+                "group",
+                "flex items-center justify-between px-4 py-3",
+                "bg-neutral-2 hover:bg-neutral-3",
+                "outline-none border border-neutral-4 hover:border-neutral-6 rounded-3xl",
+                "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-7 focus-visible:ring-offset-neutral-1"
+              )}
+            >
+              <div className="flex flex-row items-stretch gap-5 pl-2">
+                <div>
+                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">
+                    {price.name}
+                  </h3>
+                  <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-s">
+                    {price.price}
+                  </div>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+
+      <h3 className="font-medium text-2xl m-6 ml-16"># XBOX ONE, S/X</h3>
+      <ul className="grid gap-3  ">
+        {prices_XOne.map((price) => {
+          return (
+            <li
+              key={price.name}
+              className={cn(
+                "group",
+                "flex items-center justify-between px-4 py-3",
+                "bg-neutral-2 hover:bg-neutral-3",
+                "outline-none border border-neutral-4 hover:border-neutral-6 rounded-3xl",
+                "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-neutral-7 focus-visible:ring-offset-neutral-1"
+              )}
+            >
+              <div className="flex flex-row items-stretch gap-5 pl-2">
+                <div>
+                  <h3 className="transition duration-300 group-hover:translate-x-1 text-neutral-12 text-sm">
+                    {price.name}
+                  </h3>
+                  <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-s">
+                    {price.price}
+                  </div>
+                </div>
+              </div>
+            </li>
+          );
+        })}
+      </ul>
+
+      <h3 className="font-medium text-2xl m-6 ml-16"># XBOX Series S/X</h3>
+      <ul className="grid gap-3  ">
+        {prices_XSeries.map((price) => {
           return (
             <li
               key={price.name}
