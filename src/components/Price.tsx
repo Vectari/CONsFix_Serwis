@@ -14,8 +14,8 @@ const prices_PS4 = [
     price: "70-90 zł",
   },
   {
-    name: "Wymiana analoga w Nintendo Joy-Con",
-    price: "60 zł",
+    name: "",
+    price: "",
   },
 ];
 
@@ -26,22 +26,22 @@ const prices_PS5 = [
   },
   {
     name: "Wymiana lasera",
-    price: "150-220 zł",
+    price: "280 zł",
   },
   {
     name: "Wymiana analoga HALL EFFECT",
     price: "70-90 zł",
   },
   {
-    name: "Wymiana analoga w Nintendo Joy-Con",
-    price: "60 zł",
+    name: "",
+    price: "",
   },
 ];
 
 const prices_XOne = [
   {
-    name: "Czyszczenie układu chłodzenia i wymiana ciekłego metalu",
-    price: "100 zł",
+    name: "Czyszczenie układu chłodzenia i wymiana past",
+    price: "80 zł",
   },
   {
     name: "Wymiana lasera",
@@ -52,27 +52,27 @@ const prices_XOne = [
     price: "70-90 zł",
   },
   {
-    name: "Wymiana analoga w Nintendo Joy-Con",
-    price: "60 zł",
+    name: "",
+    price: "",
   },
 ];
 
 const prices_XSeries = [
   {
-    name: "Czyszczenie układu chłodzenia i wymiana ciekłego metalu",
+    name: "Czyszczenie układu chłodzenia i wymiana past",
     price: "100 zł",
   },
   {
     name: "Wymiana lasera",
-    price: "150-220 zł",
+    price: "--- zł",
   },
   {
     name: "Wymiana analoga HALL EFFECT",
     price: "70-90 zł",
   },
   {
-    name: "Wymiana analoga w Nintendo Joy-Con",
-    price: "60 zł",
+    name: "",
+    price: "",
   },
 ];
 
@@ -82,16 +82,16 @@ const prices_PS_SD = [
     price: "80 zł",
   },
   {
-    name: "Wymiana lasera",
-    price: "150-220 zł",
+    name: "",
+    price: "",
   },
   {
-    name: "Wymiana analoga HALL EFFECT",
-    price: "70-90 zł",
+    name: "",
+    price: "",
   },
   {
-    name: "Wymiana analoga w Nintendo Joy-Con",
-    price: "60 zł",
+    name: "",
+    price: "",
   },
 ];
 
@@ -101,12 +101,12 @@ const prices_PS_NS = [
     price: "80 zł",
   },
   {
-    name: "Wymiana lasera",
-    price: "150-220 zł",
+    name: "",
+    price: "",
   },
   {
-    name: "Wymiana analoga HALL EFFECT",
-    price: "70-90 zł",
+    name: "",
+    price: "",
   },
   {
     name: "Wymiana analoga w Nintendo Joy-Con",
