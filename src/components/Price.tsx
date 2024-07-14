@@ -8,6 +8,46 @@ const prices = [
     price: "80",
   },
   {
+    name: "Wymiana lasera",
+    price: "150-220",
+  },
+  {
+    name: "Naprawa napędu (nie działa lub słabo wciąga/oddaje płytę)",
+    price: "100-200",
+  },
+  {
+    name: "Wymiana gniazda HDMI",
+    price: "180",
+  },
+  {
+    name: "Wymiana kontrolera HDMI",
+    price: "220",
+  },
+  {
+    name: "Wymiana zasilacza (cena zależy od wersji)",
+    price: "250-450",
+  },
+  {
+    name: "Wymiana wentylatora (cena zależy od wersji)",
+    price: "150-200",
+  },
+  {
+    name: "Wymiana dysku HDD 1TB",
+    price: "220",
+  },
+  {
+    name: "Wymiana dysku SDD 480GB",
+    price: "220",
+  },
+  {
+    name: "Wymiana dysku SDD 980GB",
+    price: "320",
+  },
+  {
+    name: "Instalacja systemu",
+    price: "50",
+  },
+  {
     // PS4 GAMEPAD PRICES ------------------------------------------------
     title: "# Kontroler PS4",
     name: "",
