@@ -4,8 +4,8 @@ const prices = [
   {
     // PS4 PRICES --------------------------------------------------------
     title: "# PS4",
-    name: "",
-    price: "",
+    name: "Czyszczenie układu chłodzenia i wymiana pasty termoprzewodzącej",
+    price: "80",
   },
   {
     // PS4 GAMEPAD PRICES ------------------------------------------------
@@ -28,26 +28,100 @@ const prices = [
   {
     // Steam Deck PRICES ------------------------------------------------
     title: "# Steam Deck",
-    name: "",
-    price: "",
+    name: "Wymiana ekranu",
+    price: "600",
+  },
+  {
+    name: "Wymiana analoga",
+    price: "170",
+  },
+  {
+    name: "Naprawa braku ubrazu (działa na zewnętrznym)",
+    price: "450",
   },
   {
     // Nintendo Switch PRICES ------------------------------------------------
     title: "# Nintendo Switch",
-    name: "",
-    price: "",
+    name: "Wymiana szybki",
+    price: "300",
+  },
+  {
+    name: "Wymiana ekranu LCD",
+    price: "350",
+  },
+  {
+    name: "Naprawa błędu 2101-001",
+    price: "250",
+  },
+  {
+    name: "Naprawa układu ładowania",
+    price: "250-350",
+  },
+  {
+    name: "Naprawa układu WIFI/BT",
+    price: "350",
+  },
+  {
+    name: "Wymiana slotu gier",
+    price: "150",
+  },
+  {
+    name: "Wymiana slotu SD",
+    price: "150",
+  },
+  {
+    name: "Wymiana portu USB-C",
+    price: "150",
+  },
+  {
+    name: "Wymiana wentylatora",
+    price: "150",
   },
   {
     // Nintendo Switch OLED PRICES ------------------------------------------------
     title: "# Nintendo Switch OLED",
-    name: "",
-    price: "",
+    name: "Wymiana ekranu OLED",
+    price: "650",
+  },
+  {
+    name: "Wymiana slotu gier",
+    price: "200",
+  },
+  {
+    name: "Wymiana portu USB-C",
+    price: "150",
   },
   {
     // Nintendo Switch Lite PRICES ------------------------------------------------
     title: "# Nintendo Switch Lite",
-    name: "",
-    price: "",
+    name: "Wymiana szybki",
+    price: "300",
+  },
+  {
+    name: "Wymiana ekranu LCD",
+    price: "400",
+  },
+  {
+    name: "Wymiana portu USB-C",
+    price: "150",
+  },
+  {
+    name: "Wymiana lewego analoga",
+    price: "80",
+  },
+  {
+    name: "Wymiana prawego analog",
+    price: "120",
+  },
+  {
+    // Nintendo Joy-Con PRICES ------------------------------------------------
+    title: "# Nintendo Joy-Con",
+    name: "Wymiana analoga",
+    price: "60",
+  },
+  {
+    name: "Naprawa niedziałających przycisków",
+    price: "50-80",
   },
 ];
 
@@ -87,7 +161,7 @@ export default () => {
                       {price.name}
                     </h3>
                     <div className="transition duration-300 group-hover:translate-x-px text-neutral-10 group-hover:text-neutral-11 text-s">
-                      {price.price}
+                      {price.price} zł
                     </div>
                   </div>
                 </div>
